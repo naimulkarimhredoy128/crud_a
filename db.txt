@@ -1,0 +1,54 @@
+create database SchoolMgmt;
+use SchoolMgmt;
+
+create table student ( 
+	id INT(10) AUTO_INCREMENT, 
+	dept char(30), 
+	name char(30),
+    nid char(30), 
+	birth char(30),
+    address char(30), 
+    
+	PRIMARY KEY(id) 
+);
+
+insert into student values ( '', 'cse', 'naimul','140142142','18-4-1999','mirpur');
+
+create table teacher ( 
+	t_id INT(10) AUTO_INCREMENT, 
+	t_dept char(30), 
+	t_name char(30),
+    t_nid char(30), 
+	t_birth char(30),
+    t_address char(30), 
+    
+	PRIMARY KEY(t_id) 
+);
+
+insert into teacher values ( '', 'cse', 'rur','140142567','18-4-1993','mirpur2');
+
+create table course ( 
+	c_id INT(10) AUTO_INCREMENT, 
+	c_dept char(30), 
+	c_title char(30),
+        c_credit char(30), 
+	c_syllabus char(30),
+    
+    
+	PRIMARY KEY(c_id) 
+);
+
+insert into course values ( '', 'cse', 'data structure','3','sorting to graph');
+
+create table payment ( 
+	p_id INT(10) AUTO_INCREMENT, 
+	s_id INT(30), 
+	p_ammount char(30),
+    p_date char(30), 
+	
+    
+    
+	PRIMARY KEY(p_id) 
+);
+
+insert into payment values ( '', 1, '10000','17-3-2020');
